@@ -17,6 +17,8 @@ body{
 -moz-box-shadow: 10px 10px 105px 0px rgba(212,175,175,0.75);
 border-radius: 0 15px 15px;
 }
+/*      Side Bar     */
+
 .side{
     width: 50px;
     height: 100%;
@@ -24,6 +26,10 @@ border-radius: 0 15px 15px;
     display: inline-block;
     float: left;
 }
+.side img{
+    margin-top: 50px;
+}
+/*          Main         */
 .content-info{
     width: 80%;
     height: 400px;
