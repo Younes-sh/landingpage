@@ -6,16 +6,60 @@
 body{
     text-align: center;
     background-color: #102626c2;
+    background-image: url(https://cdn.pixabay.com/photo/2018/01/17/20/22/analytics-3088958_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container{
     width: 70%;
     height: 600px;
-    background-color: #102626;
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_960_720.jpg);
     margin: 100px auto  ;
     box-shadow: 10px 10px 105px 0px rgba(212,175,175,0.75);
 -webkit-box-shadow: 10px 10px 105px 0px rgba(212,175,175,0.75);
 -moz-box-shadow: 10px 10px 105px 0px rgba(212,175,175,0.75);
 border-radius: 0 15px 15px;
+position: relative;
+    display: flex;
+}
+/*          container Register */
+.register{
+    width: 500px;
+    /* height: 200px; */
+    margin: 0 410px;
+    z-index: 20;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display:inline-block;
+    color: aliceblue;
+    display:none ;
+}
+.showRegister{
+    height: 200px;
+    position: absolute;
+}
+.container .register  input{
+    margin-top: 20px;
+    font-size: 18px;
+}
+.container .register button{
+    width: 196px;
+    margin-top: 10px;
+}
+
+.container .login{
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+    border-radius: 0 5px 5px 0;
+   
+    animation: changeColorLogin 1s infinite;
+}
+@keyframes changeColorLogin {
+  
 }
 /*      Side Bar     */
 
@@ -27,14 +71,18 @@ border-radius: 0 15px 15px;
     float: left;
 }
 .side img{
-    margin-top: 50px;
+    margin-top: 30px;
 }
+
 /*          Main         */
+
 .content-info{
     width: 80%;
     height: 400px;
+    margin: 100px 150px;
     display: inline-block;
-    margin: 100px auto;
+    /* background-color: rgba(250, 235, 215, 0.596); */
+    position: absolute;
 }
 .header{
     width: 100%;
@@ -44,6 +92,7 @@ border-radius: 0 15px 15px;
 .header h1{
     font-size: 70px;
     color: antiquewhite;
+    z-index: 22;
 }
 .main{
     width: 100%;
