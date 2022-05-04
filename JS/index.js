@@ -6,3 +6,6 @@ iconRegister.addEventListener('click',()=>{
     registerDiv.classList.toggle('showRegister');
     registerDiv.classList.toggle('disnone')
 })
+
+
+c
