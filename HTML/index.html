@@ -10,14 +10,24 @@
 <body>
     <div class="container">
         <div class="contentRig register disnone">
-            <form action="" autocomplete="off">
-               <input type="text" id="lastname" placeholder="last name">
+            <form action="register" autocomplete="off">
+               <input type="text" id="usename" placeholder="Username">
                <br>
-               <input type="text" id="firstname" placeholder="firstname">
+               <input type="email" id="email" placeholder="Email">
                <br>
-               <button type="button">Register</button>
+               <input type="password" id="password" placeholder="Password">
+               <br>
+               <input type="number" placeholder="+32123456789">
+               <br>
+               <button type="button" class="btnRegister">Register</button>
             </form>
-            <div class="login">login</div>
+            <form action="login" class="disnone">
+                <input type="text" id="username" placeholder="Username"> 
+                <br>
+                <input type="text" id="password" placeholder="password">
+                <br>
+            </form>
+            <button class="btnRL"></button>
         </div>
         <div class="side">
             <button id="iconRegister">

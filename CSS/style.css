@@ -24,8 +24,20 @@ position: relative;
     display: flex;
 
 }
-/*          container Register */
+/*          container this is the register section  */
 .register{
+    width: 500px;
+    /* height: 200px; */
+    margin: 0 410px;
+    z-index: 20;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    color: rgb(128, 137, 146);
+}
+/*          this is the login section        */
+.login{
     width: 500px;
     /* height: 200px; */
     margin: 0 410px;
@@ -40,31 +52,43 @@ position: relative;
     display:none ;
 }
 .showRegister{
-    height: 200px;
+    height: 250px;
     display:inline-block;
     position: absolute;
+    transition: 0.7s;
 }
 
 .container .register  input{
     margin-top: 20px;
     font-size: 18px;
 }
-.container .register button{
-    width: 196px;
-    margin-top: 10px;
+.container .register .btnRegister{
+    width: 100px;
+    margin: 20px;
+    font-size: 16px;
+}
+.container .register .btnRegister:hover{
+    background-color: rebeccapurple;
+    color: white;
 }
 
-.container .login{
-    width: 100px;
-    height: 20px;
-    margin-top: 20px;
-    border-radius: 0 5px 5px 0;
-   
-    animation: changeColorLogin 1s infinite;
+.container .btnRL{
+    border: none;
+    float: left;
+    font-size: 18px;
+    margin: -20px 7px;
+    background-color: transparent;
 }
-@keyframes changeColorLogin {
-  
+.container .btnRL::before{
+    content: "Register";
+    margin: -10px 10px;
+    color: greenyellow;
+    cursor: pointer;
 }
+.container .btnRL::before{
+    content: "Login";
+}
+
 /*      Side Bar     */
 
 .side{
